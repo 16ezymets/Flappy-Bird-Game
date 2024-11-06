@@ -20,19 +20,18 @@ k_rotate = 1.5
 PIPE_HEIGHT = pygame.image.load('pipe.png').get_height()
 PIPE_WIDTH = pygame.image.load('pipe.png').get_width()
 pipe_gap = 100
-pipe_speed = 4
-pipe_frequency = 2000  # mls
+pipe_speed = 13
 
-difficulty = 'normal'
-if difficulty.lower() == 'hard':
+difficulty = 0
+if difficulty == 1:
     fall_a = 2
     jump_pow = 15
     fall_speed_limit = 32
     game_a = 0.01
-    game_speed_limit = 40
+    game_speed_limit = 17
 else:
     jump_pow = 10
     fall_a = 1
     fall_speed_limit = 16
     game_a = 0.005
-    game_speed_limit = 30
+    game_speed_limit = 15
